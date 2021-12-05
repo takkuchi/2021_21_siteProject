@@ -1,0 +1,286 @@
+body {
+  background-color: #181818;
+  margin: 0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+header {
+  background-color: #181818;
+  color: white;
+  margin: 0px;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav {
+  transition-duration: 0.4s;
+  box-shadow:inset 0px 0px 0px 0px #ef3a24 !important;
+}
+.nav:hover {
+  box-shadow:inset 0px -3px 0px 0px #ef3a24 !important;
+}
+.activenav {
+  box-shadow:inset 0px -3px 0px 0px #ef3a24;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: white;
+  margin-bottom: 80px;
+  margin-top: -200px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+h2{
+  margin: 12px;
+  font-family: "Open Sans", sans-serif; 
+  text-shadow: 0px 0px 10px black;
+}
+p{
+  font-family: "Open Sans", sans-serif; 
+}
+
+h1 span {
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: .2rem;
+}
+a{
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif; 
+}
+a:hover{
+  color: white;
+}
+.material-icons-outlined {
+  vertical-align: -6px;
+}
+
+.centerDiv{
+  display: flex;
+  justify-content: center;
+}
+
+.headerImage{
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: -1;
+  top: -20px;
+  margin-bottom:-200px;
+}
+
+.grote-knop{
+  padding: 40px 20%;
+  margin: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  background-color: #181818;
+  transition-duration: 0.4s;
+}
+.grote-knop:hover{
+  box-shadow:inset 270px 0px 0px 0px #3b3b3b;
+}
+
+.layer{
+  aspect-ratio: 900/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.grijs-oranje{
+  background-image: url('./layer-grijs-oranje.svg');
+  margin-top: -50px;
+}
+.oranje-grijs{
+  background-image: url('./layer-oranje-grijs.svg');
+  margin-bottom: -50px;
+}
+.grijs-blauw{
+  background-image: url('./layer-grijs-blauw.svg');
+  margin-top: -50px;
+}
+.blauw-paars{
+  background-image: url('./layer-blauw-paars.svg');
+  margin-top: -15px;
+}
+.paars-grijs{
+  background-image: url('./layer-paars-grijs.svg');
+  margin-bottom: -50px;
+}
+
+.containerembed{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bold{
+  font-weight: 700;
+}
+.xbold{
+  font-weight: 800;
+}
+.italic{
+  font-style: italic;
+}
+.orange{
+  color: #ef3a24;
+}
+.white{
+  color: white;
+}
+.dark{
+  color: #181818;
+}
+.groter{
+  font-size: 1.2rem;
+}
+.kleiner{
+  font-size: 0.8rem;
+}
+.prijs{
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-shadow: 0px 0px 10px black;
+}
+.dropshadow{
+  box-shadow: 0px 5px 20px #00000050;
+}
+.dropshadowtop{
+  box-shadow: 0px -5px 20px #00000050;
+}
+.centert{
+  text-align: center;
+}
+.centerimgt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centerimg {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.niet-wrappen{
+  white-space: nowrap;
+}
+.legepadding{
+  padding-bottom: 12vh;
+}
+.legepadding-klein{
+  padding-bottom: 4vh;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+@media (max-width: 576px){
+  .centerimg {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 600px;
+  }
+  .centerimgt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+  }
+  .stretch{
+    object-fit: cover;
+    height: 650px;
+  }
+}
+
+@media (max-width: 60em){
+
+  h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: -150px;
+  }
+
+  .headerImage{
+    width: auto;
+    height: 50%;
+    position: relative;
+    z-index: -1;
+    top: -125px;
+    margin-bottom:-200px;
+  }
+  .grijs-oranje{
+    margin-top: -10px;
+  }
+  .oranje-grijs{
+    margin-bottom: -10px;
+  }
+  .grijs-blauw{
+    margin-top: -10px;
+  }
+  .grote-knop{
+    padding: 20px 14%;
+    margin: 10px;
+  }
+  .legepadding-klein{
+    padding-bottom: 8vh;
+  }
+}
+
+@media (max-width: 75em){
+  .text-fluid{
+    font-size: .8rem;
+  }
+  h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: -120px;
+  }
+}
+
+@media(min-width: 60em){
+  p{
+    font-size: 1.2rem;
+  }
+  .footerpadding{
+    padding-left: 15%;
+  }
+  .footerpadding-rechts{
+    padding-right: 15%;
+  }
+}
+
+.divhover{
+  transition-duration: 0.4s;
+}
+.divhover:hover{
+  background-color: #ef3c243b;
+}
