@@ -3,6 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: arial;
+  overflow-x: hidden;
 }
 
 header {
@@ -227,14 +228,6 @@ a:hover{
     margin-top: -150px;
   }
 
-  .headerImage{
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: -1;
-    top: -125px;
-    margin-bottom:-200px;
-  }
   .grijs-oranje{
     margin-top: -10px;
   }
