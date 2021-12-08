@@ -6,6 +6,10 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 header {
   background-color: #181818;
   color: white;
@@ -226,6 +230,13 @@ a:hover{
     color: white;
     margin-bottom: 40px;
     margin-top: -150px;
+  }
+
+.headerImage{
+    position: relative;
+    z-index: -1;
+    top: -125px;
+    margin-bottom:-200px;
   }
 
   .grijs-oranje{
